@@ -13,11 +13,11 @@ export interface Service {
   image: string;
   icon: LucideIcon;
   color: string;
-  features: string[];
+  features: [];
   href: string;
 }
 
-export const services: Service[] = [
+export const services = [
   {
     title: "Data Analytics",
     description:
@@ -26,9 +26,73 @@ export const services: Service[] = [
     icon: BarChart3,
     color: "teal",
     features: [
-      "Survey Implementation & Data Collection",
-      "Impact Evaluations & Statistical Analysis",
-      "Dashboard Development (PowerBI, Metabase)",
+      {
+        title: "Survey Design & Implementation",
+        description:
+          "Comprehensive survey design, sampling strategies, and field data collection using CAPI tools like ODK and KoboToolbox.",
+        items: [
+          "Household surveys",
+          "School-base assestments",
+          "Enterprise surveys",
+          "Health facility surveys",
+        ],
+      },
+
+      {
+        title: "Impact Evaluations & M&E Systems",
+        description:
+          "Design and execution of impact evaluations, along with development of monitoring and evaluation systems for social protection programs.",
+        items: [
+          "Randomized Control Trials (RCTs)",
+          "Quasi-experimental designs",
+          "Dashboard development",
+          "Real-time data monitoring",
+        ],
+      },
+      {
+        title: "Data Cleaning & Statistical Analysis",
+        description:
+          "Advanced data cleaning, management, and statistical analysis using software like STATA and SPSS to derive actionable insights.",
+        items: [
+          "Data validation & quality checks",
+          "Descriptive & inferential statistics",
+          "Regression analysis",
+          "Data visualization with PowerBI",
+        ],
+      },
+      {
+        title: "Training & Capacity Building",
+        description:
+          "Specialized training programs in data collection methodologies, statistical software (STATA, SPSS), and data analysis techniques.",
+        items: [
+          "Customized training workshops",
+          "Hands-on software training",
+          "Remote and on-site options",
+          "Comprehensive training materials",
+        ],
+      },
+      {
+        title: "Dashboard Development & Visualization",
+        description:
+          "Creation of interactive dashboards and visualizations to facilitate data-driven decision-making using tools like PowerBI.",
+        items: [
+          "Custom dashboard design",
+          "KPI tracking",
+          "Interactive reports",
+          "Data storytelling",
+        ],
+      },
+      {
+        title: "Data Management & Storage Solutions",
+        description:
+          "Secure data management solutions including cloud storage, database design, and data governance frameworks to ensure data integrity and accessibility.",
+        items: [
+          "Cloud-based storage solutions",
+          "Database design & management",
+          "Data security protocols",
+          "Backup & recovery plans",
+        ],
+      },
     ],
     href: "/services/data-analytics",
   },
@@ -54,9 +118,73 @@ export const services: Service[] = [
     icon: Smartphone,
     color: "blue",
     features: [
-      "Mobile Data Collection Apps",
-      "ODK Collect & KoboToolbox Integration",
-      "Cross-Platform Development",
+      {
+        title: "Custom Software Development",
+        description:
+          "Tailored mobile applications designed to meet specific business needs, enhancing user engagement and operational efficiency.",
+        items: [
+          "Cross-platform apps (iOS & Android)",
+          "User-centric design",
+          "Performance optimization",
+          "App maintenance & updates",
+        ],
+      },
+      {
+        title: "OpenIMIS Implementation",
+        description:
+          "Health protection management platform for beneficiary registration, claims processing, and data sharing.",
+        items: [
+          "Lao PDR",
+          "Nigeria (KADCHMA)",
+          "Fiji",
+          "Social protection extension",
+        ],
+      },
+      {
+        title: "Kaarange MIS",
+        description:
+          "Management Information System for cash and in-kind transfers, developed for World Bank projects.",
+        items: [
+          "Beneficiary enrollment",
+          "Mobile disbursement",
+          "Reporting & analytics",
+          "User access controls",
+          "Payroll generation",
+        ],
+      },
+      {
+        title: "Microsoft Dynamics 365 & Business Central",
+        description:
+          "Enterprise Resource Planning (ERP) solutions to streamline business processes, improve data visibility, and enhance decision-making.",
+        items: [
+          "Finance & accounting",
+          "Supply chain management",
+          "Customer relationship management (CRM)",
+          "Human resources management",
+        ],
+      },
+      {
+        title: "Microsoft 365 Suite",
+        description:
+          "Implementation and management of Microsoft 365 tools to enhance collaboration and productivity across organizations.",
+        items: [
+          "Teams & SharePoint",
+          "Exchange Online",
+          "OneDrive for Business",
+          "Power Platform integration",
+        ],
+      },
+      {
+        title: "Web Security & Filtering",
+        description:
+          "Robust cybersecurity solutions to protect web applications and data from threats, ensuring secure online operations.",
+        items: [
+          "Firewall implementation",
+          "Intrusion detection systems",
+          "Regular security audits",
+          "Employee training on cybersecurity best practices",
+        ],
+      },
     ],
     href: "/services/mobile-development",
   },
@@ -68,9 +196,50 @@ export const services: Service[] = [
     icon: Shield,
     color: "purple",
     features: [
-      "Network Security & Firewalls",
-      "Security Assessments & Audits",
-      "Threat Monitoring & Response",
+      {
+        title: "Cloud Migration",
+        description:
+          "Seamless migration of your existing infrastructure to secure cloud platforms, ensuring minimal downtime and data integrity.",
+        items: [
+          "Assessment & planning",
+          "Data migration",
+          "Cloud configuration",
+          "Post-migration support",
+        ],
+      },
+      {
+        title: "Infrastructure Management",
+        description:
+          "Comprehensive management of your IT infrastructure to ensure optimal performance, security, and reliability.",
+        items: [
+          "Network monitoring",
+          "System updates & patches",
+          "Performance optimization",
+          "24/7 support",
+        ],
+      },
+      {
+        title: "DevOps Services",
+        description:
+          "Implementing DevOps practices to streamline software development and deployment, enhancing collaboration between development and operations teams.",
+        items: [
+          "CI/CD pipeline setup",
+          "Infrastructure as Code (IaC)",
+          "Automated testing",
+          "Monitoring & logging",
+        ],
+      },
+      {
+        title: "Cost Optimization",
+        description:
+          "Strategies and solutions to optimize your IT spending while maintaining high levels of security and performance.",
+        items: [
+          "Resource utilization analysis",
+          "Cost-effective cloud solutions",
+          "Budget planning",
+          "Vendor management",
+        ],
+      },
     ],
     href: "/services/cybersecurity",
   },

@@ -124,7 +124,13 @@ const ServicesListSection = () => {
                           <Check
                             className={`w-4 h-4 ${colors.text} flex-shrink-0 mt-0.5`}
                           />
-                          <span>{feature}</span>
+                          <span>
+                            {typeof feature === "string"
+                              ? feature
+                              : Array.isArray(feature.items)
+                              ? feature.items.join(", ")
+                              : ""}
+                          </span>
                         </li>
                       ))}
                     </ul>
