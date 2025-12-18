@@ -15,8 +15,19 @@ export const Products = [
         slug: "microsoft-365",
         tagline: "Productivity & collaboration tools",
         description:
-          "Complete cloud-based productivity suite including Office apps, Teams, SharePoint, and enterprise security.",
-
+          "Complete cloud-based productivity suite including Office apps, Teams, SharePoint, OneDrive, and enterprise-grade security and compliance tools to keep your organisation productive and protected.",
+        why: "Enable modern work by unifying collaboration, communication, and productivity tools so teams can work securely from anywhere.",
+        features: [
+          "Office apps (Word, Excel, PowerPoint)",
+          "Microsoft Teams for chat and meetings",
+          "SharePoint & OneDrive for content management",
+          "Advanced threat protection & compliance",
+        ],
+        useCases: [
+          "Remote and hybrid workforce collaboration",
+          "Secure email, file sharing and archiving",
+          "Business continuity with cloud-first productivity",
+        ],
         featured: true,
         status: "active",
       },
@@ -26,8 +37,18 @@ export const Products = [
         slug: "windows-365",
         tagline: "Cloud PC solution",
         description:
-          "Stream your Windows experience from the Microsoft cloud to any device.",
-
+          "Stream your Windows experience from the Microsoft cloud to any device. Provision secure, managed Cloud PCs for staff with predictable per-user pricing and simplified management.",
+        why: "Provide a consistent, secure desktop experience accessible from anywhere without complex VDI infrastructure.",
+        features: [
+          "Cloud PC provisioning and management",
+          "Centralized security policies",
+          "Thin-client access from any device",
+        ],
+        useCases: [
+          "Contractor and seasonal worker on-boarding",
+          "Bring Your Own Device (BYOD) enablement",
+          "Remote desktop for field teams",
+        ],
         featured: false,
         status: "active",
       },
@@ -37,7 +58,19 @@ export const Products = [
         slug: "dynamics-365",
         tagline: "Business applications",
         description:
-          "Intelligent business applications that help you run your entire business and deliver greater results. Connect your sales, service, finance, and operations teams on one platform",
+          "Intelligent business applications to streamline operations, improve customer engagement, and enable data-driven decision making. Connect sales, service, finance and operations on a single extensible platform.",
+        why: "Unify customer and operational data to automate processes, improve visibility and accelerate growth.",
+        features: [
+          "Sales & service automation",
+          "Finance & operations integration",
+          "Custom apps with Power Platform",
+          "AI-driven insights",
+        ],
+        useCases: [
+          "CRM modernization",
+          "Field service management",
+          "Integrated ERP modernization",
+        ],
         featured: true,
         status: "active",
       },
@@ -47,7 +80,19 @@ export const Products = [
         slug: "power-platform",
         tagline: "Low-code development",
         description:
-          "Build apps, automate workflows, and analyze data with Power Apps, Power Automate, and Power BI.",
+          "Rapidly build business apps, automate repetitive processes, and gain analytics-driven insights using Power Apps, Power Automate, Power BI and Dataverse.",
+        why: "Empower citizen developers and IT teams to deliver solutions faster while reducing backlog and integration complexity.",
+        features: [
+          "Low-code app builder",
+          "Process automation",
+          "Dashboards & analytics",
+          "Connectors to common systems",
+        ],
+        useCases: [
+          "Expense approval workflows",
+          "Custom line-of-business apps",
+          "Self-service reporting portals",
+        ],
         featured: false,
         status: "active",
       },
@@ -57,7 +102,19 @@ export const Products = [
         slug: "azure-services",
         tagline: "Cloud infrastructure",
         description:
-          "Comprehensive cloud computing platform with IaaS, PaaS, and SaaS capabilities.",
+          "Comprehensive cloud computing platform offering scalable infrastructure, platform services and managed services to run enterprise workloads securely and cost-effectively.",
+        why: "Migrate and modernize applications to a scalable cloud platform while optimising cost and improving resilience.",
+        features: [
+          "Virtual machines & containers",
+          "Managed databases",
+          "Serverless functions",
+          "Networking & identity services",
+        ],
+        useCases: [
+          "Cloud migration and lift-and-shift",
+          "Modern app development",
+          "Disaster recovery and backups",
+        ],
         featured: false,
         status: "active",
       },
@@ -79,6 +136,16 @@ export const Products = [
         tagline: "Complete security platform",
         description:
           "Integrated cybersecurity platform delivering broad, integrated, and automated protection.",
+        why: "Provide an integrated security architecture that simplifies operations and delivers coordinated threat protection across the network.",
+        features: [
+          "Single-pane-of-glass management",
+          "Broad threat intelligence",
+          "Automated orchestration",
+        ],
+        useCases: [
+          "Enterprise-wide security posture management",
+          "Coordinated detection across endpoints and networks",
+        ],
         featured: true,
         status: "active",
       },
@@ -89,6 +156,18 @@ export const Products = [
         tagline: "Next-gen firewall protection",
         description:
           "Industry-leading next-generation firewall with advanced threat protection.",
+        why: "Protect network edges and enforce consistent security policies with a high-performance next-generation firewall.",
+        features: [
+          "Unified threat management",
+          "Intrusion prevention & IPS",
+          "SSL inspection",
+          "Secure SD-WAN",
+        ],
+        useCases: [
+          "Perimeter firewall for office and datacenter",
+          "Secure branch connectivity with SD-WAN",
+          "Advanced threat detection and inspection",
+        ],
         featured: true,
         status: "active",
       },
@@ -99,6 +178,17 @@ export const Products = [
         tagline: "Email security solution",
         description:
           "Comprehensive email security protecting against spam, phishing, and malware.",
+        why: "Protect business email from advanced phishing, malware, and data-loss while maintaining delivery and compliance.",
+        features: [
+          "Anti-phishing & anti-spam",
+          "Attachment sandboxing",
+          "DLP integrations",
+        ],
+        useCases: [
+          "Secure corporate email",
+          "Protect customer communications",
+          "Email compliance & archiving",
+        ],
         featured: false,
         status: "active",
       },
@@ -109,6 +199,17 @@ export const Products = [
         tagline: "Endpoint protection",
         description:
           "Integrated endpoint security with VPN, vulnerability scanning, and threat defense.",
+        why: "Combine endpoint protection with remote access and vulnerability visibility for managed endpoints.",
+        features: [
+          "Endpoint antivirus & EDR",
+          "VPN client",
+          "Vulnerability scanning",
+        ],
+        useCases: [
+          "Protect remote endpoints",
+          "Secure VPN access for staff",
+          "Endpoint hygiene reporting",
+        ],
         featured: false,
         status: "active",
       },
@@ -131,6 +232,13 @@ export const Products = [
         tagline: "Complete cybersecurity suite",
         description:
           "Comprehensive cybersecurity solutions protecting networks, cloud, and endpoints.",
+        why: "Deliver consistent, prevention-first security across network, cloud, and endpoints using a unified policy model.",
+        features: ["Next-gen firewall", "Cloud security", "XDR & analytics"],
+        useCases: [
+          "Enterprise edge protection",
+          "Cloud workload security",
+          "Security operations modernization",
+        ],
         featured: true,
         status: "active",
       },
@@ -141,6 +249,17 @@ export const Products = [
         tagline: "Next-gen firewall security",
         description:
           "Network security platform with ML-powered threat prevention.",
+        why: "Prevent threats at the network edge using ML-driven detections and consistent policy enforcement.",
+        features: [
+          "ML threat prevention",
+          "Application-aware firewalling",
+          "VPN and segmentation",
+        ],
+        useCases: [
+          "Perimeter defense",
+          "Branch and campus security",
+          "Micro-segmentation",
+        ],
         featured: false,
         status: "active",
       },
@@ -151,6 +270,17 @@ export const Products = [
         tagline: "Cloud security platform",
         description:
           "Comprehensive cloud-native security platform (CNAPP) for multi-cloud environments.",
+        why: "Secure cloud workloads and enforce compliance across multi-cloud environments with visibility and runtime protection.",
+        features: [
+          "Cloud posture management",
+          "Runtime protection",
+          "CASB & data security",
+        ],
+        useCases: [
+          "Multi-cloud security posture",
+          "Protect container and serverless workloads",
+          "Cloud-native threat detection",
+        ],
         featured: false,
         status: "active",
       },
@@ -161,6 +291,17 @@ export const Products = [
         tagline: "Security operations",
         description:
           "AI-driven security operations platform with XDR and XSOAR capabilities.",
+        why: "Accelerate detection and response with AI-assisted investigations and automated playbooks to reduce mean-time-to-remediate.",
+        features: [
+          "XDR telemetry",
+          "Automated playbooks",
+          "Threat hunting tools",
+        ],
+        useCases: [
+          "Security operations automation",
+          "Incident investigation",
+          "Cross-signal detection",
+        ],
         featured: false,
         status: "active",
       },
@@ -183,6 +324,17 @@ export const Products = [
         tagline: "Synchronized protection",
         description:
           "AI-powered cybersecurity solutions with synchronized security technology.",
+        why: "Synchronized security that shares telemetry across endpoints, network and cloud to stop threats faster.",
+        features: [
+          "Synchronized telemetry",
+          "Deep learning threat detection",
+          "Centralized management",
+        ],
+        useCases: [
+          "Endpoint + network coordinated protection",
+          "SMB & enterprise security",
+          "Managed detection services",
+        ],
         featured: true,
         status: "active",
       },
@@ -193,6 +345,13 @@ export const Products = [
         tagline: "Endpoint protection",
         description:
           "Advanced endpoint protection with deep learning AI and exploit prevention.",
+        why: "Stop advanced malware and exploits with multi-layered endpoint defenses and behavioural analytics.",
+        features: ["Exploit prevention", "Anti-ransomware", "EDR capabilities"],
+        useCases: [
+          "Protect desktops and servers",
+          "Ransomware protection",
+          "Threat hunting",
+        ],
         featured: true,
         status: "active",
       },
@@ -203,6 +362,17 @@ export const Products = [
         tagline: "Network security",
         description:
           "Next-gen firewall with TLS inspection, IPS, and synchronized security.",
+        why: "Deliver simplified, centrally-managed firewalling with integrated threat protection and tunneled access.",
+        features: [
+          "TLS inspection",
+          "Intrusion prevention",
+          "Synchronized policy",
+        ],
+        useCases: [
+          "Perimeter and branch security",
+          "Secure remote access",
+          "Network segmentation",
+        ],
         featured: false,
         status: "active",
       },
@@ -213,6 +383,17 @@ export const Products = [
         tagline: "Advanced email protection",
         description:
           "Cloud-based email security protecting against phishing and malware.",
+        why: "Protect users and data by stopping phishing, business email compromise and malicious attachments before delivery.",
+        features: [
+          "Phishing detection",
+          "Attachment sandboxing",
+          "Impersonation protection",
+        ],
+        useCases: [
+          "Secure corporate mail",
+          "Prevent BEC attacks",
+          "Email continuity",
+        ],
         featured: false,
         status: "active",
       },
@@ -235,6 +416,13 @@ export const Products = [
         tagline: "Complete gateway security",
         description:
           "Comprehensive network security gateway for small and medium businesses.",
+        why: "Offer an all-in-one, easy-to-manage gateway solution for SMBs that needs robust protection without complex configuration.",
+        features: ["Web filtering", "VPN", "Application control"],
+        useCases: [
+          "SMB perimeter protection",
+          "Simple branch security",
+          "Managed service delivery",
+        ],
         featured: false,
         status: "active",
       },
@@ -245,6 +433,17 @@ export const Products = [
         tagline: "z2, z4, z6 models",
         description:
           "Purpose-built hardware appliances for various business sizes.",
+        why: "Provide turnkey appliances for organizations that prefer on-premise hardware for predictable performance and support.",
+        features: [
+          "Pre-configured appliances",
+          "Local support options",
+          "Optimized throughput",
+        ],
+        useCases: [
+          "Branch deployments",
+          "On-prem constrained environments",
+          "High-availability setups",
+        ],
         featured: false,
         status: "active",
       },
@@ -255,6 +454,17 @@ export const Products = [
         tagline: "VM deployment option",
         description:
           "Virtual machine deployment for flexible infrastructure integration.",
+        why: "Deploy virtualised gateway security in clouds or virtualized datacenters for flexible scaling and integration.",
+        features: [
+          "VM images for popular hypervisors",
+          "Flexible sizing",
+          "Cloud-friendly deployment",
+        ],
+        useCases: [
+          "Cloud deployments",
+          "Virtual branch appliances",
+          "Test & development environments",
+        ],
         featured: false,
         status: "active",
       },
@@ -277,6 +487,18 @@ export const Products = [
         tagline: "Endpoint security platform",
         description:
           "Unified endpoint protection and enterprise security platform.",
+        why: "Deliver enterprise-grade endpoint protection with behavioural analytics and centralized management to reduce dwell time and incident volume.",
+        features: [
+          "Endpoint detection & response (EDR)",
+          "Behavioural threat protection",
+          "Centralized management console",
+          "Lightweight agents",
+        ],
+        useCases: [
+          "Protect employee endpoints and servers",
+          "Rapid incident investigation and response",
+          "Managed security for remote workforces",
+        ],
         featured: true,
         status: "active",
       },
@@ -287,6 +509,17 @@ export const Products = [
         tagline: "EDR & XDR solutions",
         description:
           "Advanced detection and response with extended visibility.",
+        why: "Improve detection and response capabilities across endpoints and cloud with centralized telemetry and correlation.",
+        features: [
+          "EDR telemetry",
+          "Centralized investigation",
+          "Automated response",
+        ],
+        useCases: [
+          "Incident response maturity",
+          "Cross-endpoint detection",
+          "Managed detection services",
+        ],
         featured: false,
         status: "active",
       },
@@ -297,6 +530,17 @@ export const Products = [
         tagline: "Multi-cloud protection",
         description:
           "Comprehensive security for cloud workloads and containers.",
+        why: "Secure cloud-native workloads and container environments with runtime protection and posture checks.",
+        features: [
+          "Workload protection",
+          "Container security",
+          "Cloud posture monitoring",
+        ],
+        useCases: [
+          "Protect containerised applications",
+          "Cloud workload runtime protection",
+          "Compliance monitoring",
+        ],
         featured: false,
         status: "active",
       },
@@ -306,6 +550,17 @@ export const Products = [
         slug: "bitdefender-mdr",
         tagline: "Managed detection & response",
         description: "24/7 managed detection and response services.",
+        why: "Supplement in-house security teams with 24/7 monitoring, detection and expert response capabilities.",
+        features: [
+          "24/7 SOC monitoring",
+          "Threat hunting",
+          "Incident response",
+        ],
+        useCases: [
+          "Augment SOC capabilities",
+          "Continuous monitoring for SMBs",
+          "Outsourced incident response",
+        ],
         featured: false,
         status: "active",
       },
@@ -326,6 +581,17 @@ export const Products = [
         tagline: "Health insurance management",
         description:
           "Open-source health insurance management information system for social protection.",
+        why: "Deliver affordable and configurable social protection and health insurance management with an open-source platform.",
+        features: [
+          "Beneficiary management",
+          "Claims processing",
+          "Premium collection",
+        ],
+        useCases: [
+          "National health insurance programmes",
+          "Social protection schemes",
+          "Donor-funded healthcare projects",
+        ],
         featured: true,
         status: "active",
       },
@@ -336,6 +602,13 @@ export const Products = [
         tagline: "Social protection system",
         description:
           "Management information system for social protection programs.",
+        why: "Manage beneficiary data, payments and reporting for social protection programmes with a purpose-built MIS.",
+        features: ["Case management", "Payment tracking", "Custom reporting"],
+        useCases: [
+          "Cash transfer programmes",
+          "Targeted assistance delivery",
+          "Programme monitoring",
+        ],
         featured: false,
         status: "active",
       },
@@ -346,6 +619,17 @@ export const Products = [
         tagline: "Open source medical records",
         description:
           "Community-developed electronic medical record system platform.",
+        why: "Provide flexible, community-driven EMR capabilities for low-resource and scalable clinical environments.",
+        features: [
+          "Patient records",
+          "Modular clinical workflows",
+          "Interoperability plugins",
+        ],
+        useCases: [
+          "Primary care clinics",
+          "Facility-level EMR deployments",
+          "Research data collection",
+        ],
         featured: true,
         status: "active",
       },
@@ -355,6 +639,17 @@ export const Products = [
         slug: "gnu-health",
         tagline: "Hospital information system",
         description: "Comprehensive hospital and health information system.",
+        why: "Implement a complete hospital information and management system with an open-source stack for cost-sensitive environments.",
+        features: [
+          "Patient administration",
+          "Laboratory & pharmacy modules",
+          "Reporting",
+        ],
+        useCases: [
+          "Hospital management",
+          "Clinical workflow digitization",
+          "Regional health management",
+        ],
         featured: false,
         status: "active",
       },
@@ -365,6 +660,17 @@ export const Products = [
         tagline: "Healthcare data interoperability",
         description:
           "Fast Healthcare Interoperability Resources integration services.",
+        why: "Enable standardized exchange of healthcare data across systems to improve interoperability and analytics.",
+        features: [
+          "FHIR API development",
+          "Data mapping & transformation",
+          "Secure data exchange",
+        ],
+        useCases: [
+          "Health information exchange",
+          "Interoperability for EMRs",
+          "Clinical data aggregation",
+        ],
         featured: false,
         status: "active",
       },
@@ -386,6 +692,17 @@ export const Products = [
         tagline: "Employee lifecycle management",
         description:
           "Complete employee lifecycle management with modular HR system.",
+        why: "Automate HR processes end-to-end to improve employee experience and reduce administrative overhead.",
+        features: [
+          "Recruitment & onboarding",
+          "Leave & attendance",
+          "Payroll integrations",
+        ],
+        useCases: [
+          "SME HR automation",
+          "Large enterprise HR transformation",
+          "Payroll compliance",
+        ],
         featured: true,
         status: "active",
       },
@@ -396,6 +713,17 @@ export const Products = [
         tagline: "Automated salary processing",
         description:
           "Automated salary calculations, payslip generation, and payroll accounting.",
+        why: "Reduce payroll errors and ensure compliance by automating salary calculations, taxes and statutory reporting.",
+        features: [
+          "Payslip generation",
+          "Tax & statutory calculations",
+          "Integration with banks",
+        ],
+        useCases: [
+          "Monthly payroll processing",
+          "Salary reconciliation",
+          "Payroll outsourcing support",
+        ],
         featured: false,
         status: "active",
       },
@@ -406,6 +734,17 @@ export const Products = [
         tagline: "Biometric attendance tracking",
         description:
           "ZK biometric attendance integration with leave management system.",
+        why: "Provide accurate time and attendance tracking by integrating biometric devices with leave policies and payroll systems.",
+        features: [
+          "Biometric clock-in/out",
+          "Shift scheduling",
+          "Leave approvals",
+        ],
+        useCases: [
+          "Workforce time tracking",
+          "Rotational shift management",
+          "Integration with payroll",
+        ],
         featured: false,
         status: "active",
       },
@@ -416,6 +755,17 @@ export const Products = [
         tagline: "Employee development",
         description:
           "Employee appraisals, skills tracking, and training management.",
+        why: "Drive employee growth and retention through structured appraisals, competency mapping and training plans.",
+        features: [
+          "Appraisals & feedback",
+          "Skills matrix",
+          "Learning plan integrations",
+        ],
+        useCases: [
+          "Annual and continuous performance reviews",
+          "Employee development plans",
+          "Succession planning",
+        ],
         featured: false,
         status: "active",
       },

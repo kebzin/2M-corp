@@ -21,8 +21,7 @@ export const projects = [
       "Data Quality Assurance",
       "Statistical Analysis",
     ],
-    impact:
-      "Provided critical evidence base for national education sector planning and reform initiatives.",
+    impact: "Provided critical evidence base for national education sector planning and reform initiatives.",
     reference: {
       name: "Renee Chandonnet",
       email: "renee.chandonnet@mottmac.com",

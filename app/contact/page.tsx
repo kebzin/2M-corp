@@ -306,6 +306,20 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+      {/* Map Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="rounded-xl overflow-hidden border border-[var(--color-border)] bg-[var(--card)]">
+          <div className="w-full h-80 md:h-96">
+            <iframe
+              title="2M Corp Location"
+              className="w-full h-full"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-16.99169921875%2C13.44433996741019%2C-16.575927734375%2C13.665392091189663&layer=mapnik"
+              style={{ border: 0 }}
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

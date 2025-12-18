@@ -53,6 +53,18 @@ const SubProductDetail = ({ product }: { product: any }) => {
         <p>{product.description}</p>
       </div>
 
+      {/* Why section */}
+      {(product.why || data?.why) && (
+        <div className="mb-6">
+          <h4 className="text-xl font-semibold text-[var(--color-primary)] mb-2">
+            Why this service
+          </h4>
+          <p className="text-[var(--color-muted-foreground)]">
+            {product.why ?? data.why}
+          </p>
+        </div>
+      )}
+
       {data ? (
         <>
           {/* Includes list */}
@@ -62,7 +74,7 @@ const SubProductDetail = ({ product }: { product: any }) => {
                 Includes Everything You Need
               </h4>
               <ul className="space-y-2 text-sm text-[var(--color-muted-foreground)]">
-                {data.includes.map((inc: string, idx: number) => (
+                {(data?.includes ?? []).map((inc: string, idx: number) => (
                   <li key={idx} className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
                     <span>{inc}</span>
@@ -104,7 +116,7 @@ const SubProductDetail = ({ product }: { product: any }) => {
               Essential Apps Included
             </h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {data.apps.map((app: any, idx: number) => {
+              {(data?.apps ?? []).map((app: any, idx: number) => {
                 const Icon =
                   typeof app.icon === "string"
                     ? iconMap[app.icon] ?? Video
@@ -142,13 +154,37 @@ const SubProductDetail = ({ product }: { product: any }) => {
             </div>
           </div>
 
+          {/* Features (from product.features or data.features) */}
+          {(product.features || data?.features) && (
+            <div className="mb-8">
+              <h4 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
+                Key Features
+              </h4>
+              <ul className="grid md:grid-cols-2 gap-3 list-none">
+                {(product.features ?? data.features).map(
+                  (f: string, i: number) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 bg-[var(--card)] border border-[var(--color-border)] rounded-md p-3"
+                    >
+                      <Check className="h-5 w-5 text-[var(--color-primary)] mt-1 flex-shrink-0" />
+                      <span className="text-[var(--color-muted-foreground)]">
+                        {f}
+                      </span>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
+
           {/* Plans */}
           <div className="mb-8">
             <h4 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
               Choose the Right Plan
             </h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {data.plans.map((plan: any, idx: number) => (
+              {(data?.plans ?? []).map((plan: any, idx: number) => (
                 <div
                   key={idx}
                   className={`bg-[var(--card)] rounded-xl p-6 shadow ${
@@ -203,28 +239,30 @@ const SubProductDetail = ({ product }: { product: any }) => {
               Perfect For Your Business Needs
             </h4>
             <div className="grid md:grid-cols-3 gap-6">
-              {data.useCases.map((uc: any, i: number) => {
-                const Icon =
-                  typeof uc.icon === "string"
-                    ? iconMap[uc.icon] ?? Users
-                    : uc.icon;
-                return (
-                  <div
-                    key={i}
-                    className="text-center p-6 rounded-xl border border-[var(--color-border)] bg-[var(--card)]"
-                  >
-                    <div className="inline-flex items-center justify-center w-14 h-14 bg-[var(--color-primary)]/10 text-[var(--color-primary)] rounded-xl mb-4">
-                      <Icon className="h-7 w-7" />
+              {(product.useCases ?? data?.useCases ?? []).map(
+                (uc: any, i: number) => {
+                  const Icon =
+                    typeof uc.icon === "string"
+                      ? iconMap[uc.icon] ?? Users
+                      : uc.icon;
+                  return (
+                    <div
+                      key={i}
+                      className="text-center p-6 rounded-xl border border-[var(--color-border)] bg-[var(--card)]"
+                    >
+                      <div className="inline-flex items-center justify-center w-14 h-14 bg-[var(--color-primary)]/10 text-[var(--color-primary)] rounded-xl mb-4">
+                        <Icon className="h-7 w-7" />
+                      </div>
+                      <h5 className="text-lg font-bold mb-2 text-[var(--color-primary)]">
+                        {uc.title}
+                      </h5>
+                      <p className="text-sm text-[var(--color-muted-foreground)]">
+                        {uc.description}
+                      </p>
                     </div>
-                    <h5 className="text-lg font-bold mb-2 text-[var(--color-primary)]">
-                      {uc.title}
-                    </h5>
-                    <p className="text-sm text-[var(--color-muted-foreground)]">
-                      {uc.description}
-                    </p>
-                  </div>
-                );
-              })}
+                  );
+                }
+              )}
             </div>
           </div>
 
